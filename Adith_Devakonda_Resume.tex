@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modern Resume
+% LaTeX Template
+% Version 2.0 (09/17/2025)
+%
+% Updated template for Adith Devakonda
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=0.5in, right=0.5in, top=0.3in, bottom=0.3in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{multicol}
+
+%-----------------------------------------------------------
+% Customizations
+%-----------------------------------------------------------
+
+% Define colors
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{000000} % Black for text
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=blue,
+}
+
+% Remove page numbering
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}
+  {\color{primary}\scshape\bfseries\large}
+  {}
+  {0em}
+  {}[\titlerule]
+\titlespacing*{\section}{0pt}{0.3\baselineskip}{0.2\baselineskip}
+
+% Set list indentation and spacing
+\setlist[itemize]{leftmargin=0.2in, labelsep=3pt, noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt}
+\setlength{\multicolsep}{0pt}
+
+% Fix subsection indentation
+\makeatletter
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}%
+  {-3.25ex plus -1ex minus -.2ex}%
+  {1.5ex plus .2ex}%
+  {\normalfont\large\bfseries}}
+\makeatother
+
+% Custom command for job titles to ensure no indentation
+\newcommand{\jobtitle}[1]{\noindent\textbf{#1}}
+
+%-----------------------------------------------------------
+% Document begins
+%-----------------------------------------------------------
+
+\begin{document}
+
+%-----------------------------------------------------------
+% HEADER
+%-----------------------------------------------------------
+\begin{center}
+    {\Large \bfseries Adith Devakonda}
+    \vspace{2pt}
+    
+    \href{https://github.com/ASD02}{GitHub: https://github.com/ASD02} $|$
+    \href{mailto:adithdevakonda@gmail.com}{adithdevakonda@gmail.com} $|$
+    (404) 820-6011 $|$
+    Suwanee, GA
+\end{center}
+
+%-----------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-----------------------------------------------------------
+\section*{PROFESSIONAL SUMMARY}
+AI/Data Engineer with ML, data science, and cloud experience. Proven track record at Codoxo developing ETL workflows, deploying ML models for healthcare fraud detection, and creating AI solutions. Winner of GenAI Innovation Challenge.
+
+\section*{EDUCATION}
+\textbf{Georgia Institute of Technology} $\bullet$ M.S. in Computer Science (Artificial Intelligence) \\
+\textbf{Georgia Institute of Technology} $\bullet$ B.S. in Computer Science (Networks \& Machine Learning) $|$ Graduated May 2025
+
+\section*{TECHNICAL SKILLS}
+\textbf{Languages:} Python, Java, SQL, JavaScript, C++ \\
+\textbf{Technologies:} Apache Spark, AWS (SageMaker, EMR, S3, EC2, Lambda), TensorFlow, PyTorch, LangChain, PostgreSQL, React.js, Node.js, Airflow, Django
+
+\section*{HONORS/AWARDS}
+\begin{tabular}{@{}p{0.5\textwidth} p{0.5\textwidth}@{}}
+\textbf{Innovation Challenge: Generative AI} & \textbf{Data Science @ GT Leadership Recognition} \\
+Codoxo - 1st Place & Director of Content \\
+\end{tabular}
+
+%-----------------------------------------------------------
+% WORK EXPERIENCE
+%-----------------------------------------------------------
+\section*{WORK EXPERIENCE}
+\jobtitle{AI/Data Engineer at Codoxo} $|$ \textbf{AI Solutions for Healthcare} $|$ \textbf{Duluth, GA} \hfill \textbf{May 2024 - Current}
+\begin{itemize}
+    \item Developed LLM-based product using Bedrock API and Sonnet-4 for healthcare data validation, reducing client onboarding time by 20\% and ensuring data integrity across multiple healthcare datasets
+    \item Built ensemble learning model for document clone detection using 7-feature weighted classifier (MinHash, TF-IDF, SimHash) with threshold-based classification for large-scale record ingestion and fraud prevention
+    \item Designed AWS Lambda functions as ETL middleware for claim audit ingestion, implementing REST APIs for seamless data flow and processing across multiple client environments
+    \item Implemented PySpark processes for loading PostgreSQL tables from Parquet files in AWS S3, integrating into Airflow workflows using big data technologies for scalable data processing
+    \item Researched and deployed multiple LLMs as endpoints on AWS SageMaker, demonstrating expertise in cloud-based model deployment and scaling for production environments
+    \item Successfully onboarded multiple clients and created customized ETL workflows, ensuring data reliability and accuracy across diverse healthcare systems and compliance requirements
+\end{itemize}
+
+\jobtitle{BI Analyst Intern at Billtrust} $|$ \textbf{Remote} \hfill \textbf{May 2023 - August 2023}
+\begin{itemize}
+    \item Collaborated with engineers to develop LangChain tools, holding thrice weekly meetings to ensure alignment and progress on research checkpoints and deliverables
+    \item Developed application connecting Large Language Models to Snowflake Database, enabling users to generate SQL queries using natural language processing and improving query efficiency
+    \item Utilized Python, SQL, Snowflake, SQLAlchemy, and LangChain for database integration and natural language query processing, contributing to enhanced user experience and system performance
+\end{itemize}
+
+\jobtitle{Director of Content at Data Science @ GT} $|$ \textbf{Atlanta, GA} \hfill \textbf{January 2023 - January 2024}
+\begin{itemize}
+    \item Managed 100+ member club as part of 10-member executive board, coordinating educational initiatives and member engagement to foster data science learning community
+    \item Assigned tasks and mentorship teams to direct reports, tailoring assignments to individual skills to maximize productivity and professional development outcomes
+    \item Organized and executed bootcamp meetings for 60+ students, including scheduling, catering coordination, and logistics management for comprehensive educational experiences
+\end{itemize}
+
+\jobtitle{Mentor and Workshop Leader at Data Science @ GT} $|$ \textbf{Atlanta, GA} \hfill \textbf{September 2022 - Present}
+\begin{itemize}
+    \item Facilitate discussions between students to provide optimal Data Science learning experiences and career guidance, supporting academic and professional growth
+    \item Conduct workshops on Data Analysis and Artificial Intelligence topics, employing various techniques to maximize attendance and engagement across diverse skill levels
+    \item Plan and facilitate Data Preprocessing and Machine Learning workshops, utilizing Python, Pandas, NumPy, and PyTorch to deliver hands-on technical training
+\end{itemize}
+
+\section*{PROJECT EXPERIENCE}
+\jobtitle{Wealth Inequalities in Motor Vehicle Collision Response Time}
+\begin{itemize}
+    \item Analyzed correlation between community wealth and emergency response times using PCA, Gaussian Mixture Models, Decision Trees, and CNNs to identify socioeconomic disparities in emergency services
+    \item Utilized Python, Pandas, NumPy, Scikit-Learn, Streamlit, and GitHub for comprehensive data processing, statistical analysis, and interactive visualization development
+\end{itemize}
+
+\jobtitle{Full Stack Web Application - Data Science @ GT}
+\begin{itemize}
+    \item Designed intuitive GUIs for club websites and member management systems, enhancing user experience and streamlining administrative processes
+    \item Implemented general-body information system using HTML, CSS, JavaScript, Node.js, React.js, PostgreSQL, and Postman for comprehensive web application development and API integration
+\end{itemize}
+
+
+\end{document}
