@@ -23,10 +23,7 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -51,7 +48,7 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
                 </div>
                 <div class="hero-social">
                     <a href="https://github.com/ASD02" target="_blank" class="social-link">
@@ -142,121 +139,217 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <!-- Portfolio Section with Tabs -->
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="job-header">
-                            <h3>AI/Data Engineer</h3>
-                            <h4>Codoxo - AI Solutions for Healthcare</h4>
-                            <span class="job-location">Duluth, GA</span>
-                            <span class="job-duration">May 2024 - Current</span>
-                        </div>
-                        <ul class="job-responsibilities">
-                            <li>Developed LLM-based product using Bedrock API and Sonnet-4 for healthcare data validation, reducing client onboarding time by 20% and ensuring data integrity across multiple healthcare datasets</li>
-                            <li>Built ensemble learning model for document clone detection using 7-feature weighted classifier (MinHash, TF-IDF, SimHash) with threshold-based classification for large-scale record ingestion and fraud prevention</li>
-                            <li>Designed AWS Lambda functions as ETL middleware for claim audit ingestion, implementing REST APIs for seamless data flow and processing across multiple client environments</li>
-                            <li>Implemented PySpark processes for loading PostgreSQL tables from Parquet files in AWS S3, integrating into Airflow workflows using big data technologies for scalable data processing</li>
-                            <li>Researched and deployed multiple LLMs as endpoints on AWS SageMaker, demonstrating expertise in cloud-based model deployment and scaling for production environments</li>
-                            <li>Successfully onboarded multiple clients and created customized ETL workflows, ensuring data reliability and accuracy across diverse healthcare systems and compliance requirements</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="job-header">
-                            <h3>BI Analyst Intern</h3>
-                            <h4>Billtrust</h4>
-                            <span class="job-location">Remote</span>
-                            <span class="job-duration">May 2023 - August 2023</span>
-                        </div>
-                        <ul class="job-responsibilities">
-                            <li>Collaborated with engineers to develop LangChain tools, holding thrice weekly meetings to ensure alignment and progress on research checkpoints and deliverables</li>
-                            <li>Developed application connecting Large Language Models to Snowflake Database, enabling users to generate SQL queries using natural language processing and improving query efficiency</li>
-                            <li>Utilized Python, SQL, Snowflake, SQLAlchemy, and LangChain for database integration and natural language query processing, contributing to enhanced user experience and system performance</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="job-header">
-                            <h3>Director of Content</h3>
-                            <h4>Data Science @ GT</h4>
-                            <span class="job-location">Atlanta, GA</span>
-                            <span class="job-duration">January 2023 - January 2024</span>
-                        </div>
-                        <ul class="job-responsibilities">
-                            <li>Managed 100+ member club as part of 10-member executive board, coordinating educational initiatives and member engagement to foster data science learning community</li>
-                            <li>Assigned tasks and mentorship teams to direct reports, tailoring assignments to individual skills to maximize productivity and professional development outcomes</li>
-                            <li>Organized and executed bootcamp meetings for 60+ students, including scheduling, catering coordination, and logistics management for comprehensive educational experiences</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="job-header">
-                            <h3>Mentor and Workshop Leader</h3>
-                            <h4>Data Science @ GT</h4>
-                            <span class="job-location">Atlanta, GA</span>
-                            <span class="job-duration">September 2022 - Present</span>
-                        </div>
-                        <ul class="job-responsibilities">
-                            <li>Facilitate discussions between students to provide optimal Data Science learning experiences and career guidance, supporting academic and professional growth</li>
-                            <li>Conduct workshops on Data Analysis and Artificial Intelligence topics, employing various techniques to maximize attendance and engagement across diverse skill levels</li>
-                            <li>Plan and facilitate Data Preprocessing and Machine Learning workshops, utilizing Python, Pandas, NumPy, and PyTorch to deliver hands-on technical training</li>
-                        </ul>
-                    </div>
-                </div>
+            <h2 class="section-title">Portfolio</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="experience">
+                    <i class="fas fa-briefcase"></i>
+                    Experience
+                </button>
+                <button class="tab-btn" data-tab="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </button>
+                <button class="tab-btn" data-tab="projects">
+                    <i class="fas fa-code"></i>
+                    Projects
+                </button>
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Project Experience</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Wealth Inequalities in Motor Vehicle Collision Response Time</h3>
-                    </div>
-                    <div class="project-content">
-                        <p>Analyzed correlation between community wealth and emergency response times using PCA, Gaussian Mixture Models, Decision Trees, and CNNs to identify socioeconomic disparities in emergency services.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">NumPy</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">GitHub</span>
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Experience Tab -->
+                <div class="tab-pane active" id="experience">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h3>AI/Data Engineer</h3>
+                                    <h4>Codoxo - AI Solutions for Healthcare</h4>
+                                    <span class="job-location">Duluth, GA</span>
+                                    <span class="job-duration">May 2024 - Current</span>
+                                </div>
+                                <ul class="job-responsibilities">
+                                    <li>Developed LLM-based product using Bedrock API and Sonnet-4 for healthcare data validation, reducing client onboarding time by 20% and ensuring data integrity across multiple healthcare datasets</li>
+                                    <li>Built ensemble learning model for document clone detection using 7-feature weighted classifier (MinHash, TF-IDF, SimHash) with threshold-based classification for large-scale record ingestion and fraud prevention</li>
+                                    <li>Designed AWS Lambda functions as ETL middleware for claim audit ingestion, implementing REST APIs for seamless data flow and processing across multiple client environments</li>
+                                    <li>Implemented PySpark processes for loading PostgreSQL tables from Parquet files in AWS S3, integrating into Airflow workflows using big data technologies for scalable data processing</li>
+                                    <li>Researched and deployed multiple LLMs as endpoints on AWS SageMaker, demonstrating expertise in cloud-based model deployment and scaling for production environments</li>
+                                    <li>Successfully onboarded multiple clients and created customized ETL workflows, ensuring data reliability and accuracy across diverse healthcare systems and compliance requirements</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h3>BI Analyst Intern</h3>
+                                    <h4>Billtrust</h4>
+                                    <span class="job-location">Remote</span>
+                                    <span class="job-duration">May 2023 - August 2023</span>
+                                </div>
+                                <ul class="job-responsibilities">
+                                    <li>Collaborated with engineers to develop LangChain tools, holding thrice weekly meetings to ensure alignment and progress on research checkpoints and deliverables</li>
+                                    <li>Developed application connecting Large Language Models to Snowflake Database, enabling users to generate SQL queries using natural language processing and improving query efficiency</li>
+                                    <li>Utilized Python, SQL, Snowflake, SQLAlchemy, and LangChain for database integration and natural language query processing, contributing to enhanced user experience and system performance</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h3>Director of Content</h3>
+                                    <h4>Data Science @ GT</h4>
+                                    <span class="job-location">Atlanta, GA</span>
+                                    <span class="job-duration">January 2023 - January 2024</span>
+                                </div>
+                                <ul class="job-responsibilities">
+                                    <li>Managed 100+ member club as part of 10-member executive board, coordinating educational initiatives and member engagement to foster data science learning community</li>
+                                    <li>Assigned tasks and mentorship teams to direct reports, tailoring assignments to individual skills to maximize productivity and professional development outcomes</li>
+                                    <li>Organized and executed bootcamp meetings for 60+ students, including scheduling, catering coordination, and logistics management for comprehensive educational experiences</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="job-header">
+                                    <h3>Mentor and Workshop Leader</h3>
+                                    <h4>Data Science @ GT</h4>
+                                    <span class="job-location">Atlanta, GA</span>
+                                    <span class="job-duration">September 2022 - Present</span>
+                                </div>
+                                <ul class="job-responsibilities">
+                                    <li>Facilitate discussions between students to provide optimal Data Science learning experiences and career guidance, supporting academic and professional growth</li>
+                                    <li>Conduct workshops on Data Analysis and Artificial Intelligence topics, employing various techniques to maximize attendance and engagement across diverse skill levels</li>
+                                    <li>Plan and facilitate Data Preprocessing and Machine Learning workshops, utilizing Python, Pandas, NumPy, and PyTorch to deliver hands-on technical training</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Full Stack Web Application - Data Science @ GT</h3>
+                <!-- Education Tab -->
+                <div class="tab-pane" id="education">
+                    <div class="education-content">
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="education-details">
+                                <h3>Georgia Institute of Technology</h3>
+                                <h4>Master of Science in Computer Science</h4>
+                                <p class="specialization">Specialization: Artificial Intelligence</p>
+                                <div class="education-meta">
+                                    <span class="degree-type">Graduate Degree</span>
+                                    <span class="status">Completed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-details">
+                                <h3>Georgia Institute of Technology</h3>
+                                <h4>Bachelor of Science in Computer Science</h4>
+                                <p class="specialization">Specialization: Networks & Machine Learning</p>
+                                <div class="education-meta">
+                                    <span class="degree-type">Undergraduate Degree</span>
+                                    <span class="graduation-date">Graduated May 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-highlights">
+                            <h3>Academic Highlights</h3>
+                            <div class="highlights-grid">
+                                <div class="highlight-item">
+                                    <i class="fas fa-trophy"></i>
+                                    <h4>GenAI Innovation Challenge Winner</h4>
+                                    <p>1st Place - Codoxo Innovation Challenge</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-users"></i>
+                                    <h4>Leadership Recognition</h4>
+                                    <p>Director of Content - Data Science @ GT</p>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h4>Research Focus</h4>
+                                    <p>Machine Learning, AI, and Data Science</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <p>Designed intuitive GUIs for club websites and member management systems, enhancing user experience and streamlining administrative processes.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Postman</span>
+                </div>
+
+                <!-- Projects Tab -->
+                <div class="tab-pane" id="projects">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Wealth Inequalities in Motor Vehicle Collision Response Time</h3>
+                                <div class="project-category">Data Science Research</div>
+                            </div>
+                            <div class="project-content">
+                                <p>Analyzed correlation between community wealth and emergency response times using PCA, Gaussian Mixture Models, Decision Trees, and CNNs to identify socioeconomic disparities in emergency services.</p>
+                                <div class="project-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Statistical analysis using PCA and Gaussian Mixture Models</li>
+                                        <li>Machine learning classification with Decision Trees and CNNs</li>
+                                        <li>Interactive visualization with Streamlit</li>
+                                        <li>Comprehensive data processing pipeline</li>
+                                    </ul>
+                                </div>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">NumPy</span>
+                                    <span class="tech-tag">Scikit-Learn</span>
+                                    <span class="tech-tag">Streamlit</span>
+                                    <span class="tech-tag">GitHub</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <h3>Full Stack Web Application - Data Science @ GT</h3>
+                                <div class="project-category">Web Development</div>
+                            </div>
+                            <div class="project-content">
+                                <p>Designed intuitive GUIs for club websites and member management systems, enhancing user experience and streamlining administrative processes.</p>
+                                <div class="project-features">
+                                    <h4>Key Features:</h4>
+                                    <ul>
+                                        <li>Responsive web interface design</li>
+                                        <li>Member management system</li>
+                                        <li>Database integration with PostgreSQL</li>
+                                        <li>RESTful API development</li>
+                                    </ul>
+                                </div>
+                                <div class="project-tech">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Postman</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
