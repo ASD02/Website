@@ -105,46 +105,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        
-        // Show loading state
-        submitBtn.innerHTML = '<span class="loading"></span> Sending...';
-        submitBtn.disabled = true;
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            subject: formData.get('subject'),
-            message: formData.get('message')
-        };
-        
-        try {
-            // Simulate form submission (replace with actual endpoint)
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            
-            // Show success message
-            showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-            contactForm.reset();
-            
-        } catch (error) {
-            // Show error message
-            showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
-        } finally {
-            // Reset button
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }
-    });
-}
+// Resume download functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const downloadBtn = document.querySelector('.resume-download .btn');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', (e) => {
+            // Optional: Add analytics or tracking here
+            console.log('Resume download initiated');
+        });
+    }
+});
 
 // Notification system
 function showNotification(message, type = 'info') {

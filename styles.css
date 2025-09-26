@@ -919,36 +919,34 @@ section {
     text-decoration: underline;
 }
 
-.contact-form {
+.resume-download {
     background: #f8f9fa;
     padding: 2rem;
     border-radius: 15px;
+    text-align: center;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
+.resume-download h3 {
+    color: #333;
+    margin-bottom: 1rem;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    font-family: inherit;
+.resume-download p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #667eea;
+.resume-download .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
 }
 
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
+.resume-download .btn i {
+    font-size: 1.2rem;
 }
 
 /* Footer */
@@ -1149,7 +1147,7 @@ section {
         padding: 1.5rem;
     }
 
-    .contact-form {
+    .resume-download {
         padding: 1.5rem;
     }
 }
