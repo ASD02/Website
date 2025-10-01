@@ -2,21 +2,21 @@
 
 A modern, responsive portfolio website showcasing my professional experience as an AI/Data Engineer. Built with HTML5, CSS3, and JavaScript, featuring a clean design and smooth animations.
 
-## 🚀 Live Demo
+## Live Demo
 
 Visit the live website: [Your GitHub Pages URL will appear here after deployment]
 
-## 📋 Features
+## Features
 
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Modern UI/UX**: Clean, professional design with smooth animations
 - **Interactive Elements**: Hover effects, scroll animations, and dynamic navigation
-- **Contact Form**: Functional contact form with validation
+- **Resume Download**: Direct download link for PDF resume
 - **SEO Optimized**: Proper meta tags and semantic HTML structure
 - **Fast Loading**: Optimized assets and efficient code
 - **Accessibility**: WCAG compliant with proper ARIA labels
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5**: Semantic markup and modern HTML features
 - **CSS3**: Flexbox, Grid, animations, and responsive design
@@ -25,7 +25,7 @@ Visit the live website: [Your GitHub Pages URL will appear here after deployment
 - **Google Fonts**: Inter font family for typography
 - **GitHub Pages**: Hosting and deployment
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── index.html              # Main HTML file
@@ -38,7 +38,7 @@ Visit the live website: [Your GitHub Pages URL will appear here after deployment
 └── Adith_Devakonda_Resume.pdf  # Original resume PDF
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -65,7 +65,7 @@ Visit the live website: [Your GitHub Pages URL will appear here after deployment
    - Select "GitHub Actions" as the source
    - The site will be automatically deployed
 
-## 🎨 Customization
+## Customization
 
 ### Changing Colors
 
@@ -95,13 +95,13 @@ The experience section uses a custom timeline. To add new entries:
 2. Update the content with your information
 3. The CSS will automatically handle the alternating layout
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 - **Desktop**: 1200px and above
 - **Tablet**: 768px to 1199px
 - **Mobile**: 767px and below
 
-## 🔧 Browser Support
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
@@ -109,14 +109,14 @@ The experience section uses a custom timeline. To add new entries:
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 📈 Performance Features
+## Performance Features
 
 - **Lazy Loading**: Images load only when needed
 - **Debounced Scroll Events**: Optimized scroll performance
 - **Minified Assets**: Compressed CSS and JavaScript
 - **Efficient Animations**: Hardware-accelerated CSS animations
 
-## 🎯 SEO Features
+## SEO Features
 
 - Semantic HTML structure
 - Meta tags for social sharing
@@ -125,37 +125,37 @@ The experience section uses a custom timeline. To add new entries:
 - Fast loading times
 - Mobile-friendly design
 
-## 📞 Contact Information
+## Contact Information
 
 - **Email**: adithdevakonda@gmail.com
 - **Phone**: (404) 820-6011
 - **Location**: Suwanee, GA
 - **GitHub**: [github.com/ASD02](https://github.com/ASD02)
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues).
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Design inspiration from modern portfolio websites
 - Icons provided by Font Awesome
 - Fonts by Google Fonts
 - Hosting by GitHub Pages
 
-## 📝 Changelog
+## Changelog
 
 ### Version 1.0.0
 - Initial release
 - Responsive design
 - Interactive features
-- Contact form
+- Resume download functionality
 - GitHub Pages deployment
 
 ---
 
-**Built with ❤️ by Adith Devakonda**
+**Built by Adith Devakonda**
