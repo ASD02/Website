@@ -1057,6 +1057,20 @@ section {
         font-size: 2.5rem;
     }
 
+    .profile-avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .headshot-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-card {
+        max-width: 280px;
+    }
+
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
@@ -1160,6 +1174,21 @@ section {
 
     .hero-subtitle {
         font-size: 1.2rem;
+    }
+
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .headshot-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-card {
+        max-width: 250px;
+        padding: 1.5rem;
     }
 
     .btn {
