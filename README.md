@@ -128,8 +128,6 @@ The experience section uses a custom timeline. To add new entries:
 ## Contact Information
 
 - **Email**: adithdevakonda@gmail.com
-- **Phone**: (404) 820-6011
-- **Location**: Suwanee, GA
 - **GitHub**: [github.com/ASD02](https://github.com/ASD02)
 
 ## License
